@@ -9,5 +9,5 @@ class CheckModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = CheckModel
         fields = [
-            "uuid", "client", "check_amount", "expiration_date", "quotation_status", "expenses"
+            "uuid", "client_check_key", "check_amount", "expiration_date", "quotation_status", "amount_client_recieves", "expenses"
         ]

@@ -7,5 +7,5 @@ class ExpensesModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = ExpensesModel
         fields = [
-            "uuid", "discount_rate", "payment_date_discount"
+            "uuid", "total_discounts"
             ]

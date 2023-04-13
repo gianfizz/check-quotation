@@ -8,5 +8,5 @@ class ClientModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = ClientModel
         fields = [
-            "uuid", "full_name", "cuit_or_ruc", "email", "phone", "checks"
+            "uuid", "full_name", "cuit_or_ruc", "email", "phone", "client_check"
             ]
