@@ -4,7 +4,7 @@ from app.models.clients_model import ClientModel
 from app.serializers.checks_serializer import CheckModelSerializer
 
 class ClientModelSerializer(serializers.ModelSerializer):
-    checks = CheckModelSerializer(many=True, read_only=True)
+    client_check = CheckModelSerializer(many=True, read_only=True)
     class Meta:
         model = ClientModel
         fields = [
